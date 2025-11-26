@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="logoli.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    
+    <header class="main-header">
+        <nav class="top-nav">
+            <div class="logo-escuela">
+                <img src="logo.png" alt="E.T FRAJIVA" title="Logo" class="imagen-logo">
+                <h3>E.T "Francisco Jiménez Valera"</h3>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-boton">☰</label>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="dropdown">
+                    <a href="./Pasantía/index2.html">Pasantías</a>
+                    <ul class="dropdown-content">
+                    <li><a href="./Preguntas/preguntas.html">Preguntas Frecuentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Calendario/index.html">Calendario</a></li>
+                <li class="manual">
+                    <a href="./Manual_de_Usuario.pdf"><i class="fas fa-file-download"></i>      Manual de Usuario </a>
+                </li>
+            </ul>        
+        </nav>
+    </header>
+        
+    <div class="container">
+        <div class="contenido">
+            <h2>¡Bienvenido al <br> calendario!</h2>
+            <p>En nuestro calendario escolar se mostrarán todos los eventos importantes relacionados con las actividades de interés estudiantil, así como eventos culturales que estén previstos en el mes en curso.</p>
+        </div>
+
+        <div class="position">
+            <div class="calendario">
+                <iframe src="https://calendar.google.com/calendar/embed?src=4b9b2e893fec1b85909e963874b0f02b2439995293bce2511810e38f5cb368d5%40group.calendar.google.com&ctz=America%2FCaracas" frameborder="0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+     <footer>
+    <div class="footer-content agrupado-footer">
+        <div class="bloque-redes-ubicacion">
+            <div class="col-redes">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <a href="https://www.facebook.com/share/14PReWWHfwd/" target="_blank" class="facebook-btn">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/et.fjvl?igsh=MTJrdDdncHBrcjRwcA==" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+    <div class="col-ubicacion">
+                <p>Ubícanos en:</p>
+                <a href="https://maps.app.goo.gl/tMXQspDNJTb1nQr7A" target="_blank" class="ubicacion">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+                <br>
+                Av. Cementerio con carrera 8 vía Mayorista, San Francisco.
+            </div>
+        </div>
+
+        <div class="bloque-info-legal">
+            <p>E.T. "Francisco Jiménez Valera"</p>
+            <p>Barquisimeto, Estado Lara, Venezuela.</p>
+            <br>
+            <p>&copy; 2025 | Creado por: Fabrega | Leal | Sivira | Sulbaran | Yepez.</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>

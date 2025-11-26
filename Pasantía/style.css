@@ -1,0 +1,839 @@
+
+/* Estilos Generales y Reset Básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-image:  url(fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/* ------------------- Encabezado (Header) ------------------- */
+.main-header {
+    background-color: rgba(29, 38, 113, 0.6);
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.6;
+}
+
+.logo-escuela{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+
+}
+.imagen-logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.logo-escuela h3{
+    color: rgb(226, 182, 124);
+    font-size: 1.1em;
+    margin: 0;
+    white-space: nowrap;
+}
+/* ------------------- Navegación (Nav) ------------------- */
+.top-nav{
+    display: flex;
+    background-color: rgb(0, 0, 115);
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between; /* separa logo y menú */
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.top-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.top-nav ul li{
+    display: inline-block;
+    position: relative;
+}
+.top-nav a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+    font-size: 21px;
+}
+.menu {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+.menu-boton {
+    display: none; /* oculto por defecto */
+    font-size: 24px;
+    color: white;
+    background-color: rgb(0, 0, 115);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto; /* lo empuja a la derecha */
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* ------------------- Menú Desplegable ------------------- */
+.dropdown-content{
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: rgba(29, 38, 113, 0.6);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li{
+    display: block;
+}
+.dropdown-content:hover{
+    background-color: rgb(0, 0, 88); /*al pasar el cursor se pone mas oscuro*/
+}
+.top-nav li:hover{
+    background-color: rgb(0, 0, 88); /*al pasar el cursor se pone mas oscuro*/
+}
+
+.top-nav li a{
+    white-space: nowrap;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.manual li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* ------------------- Menú Desplegable ------------------- */
+.dropdown-content{
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: rgba(29, 38, 113, 0.6);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Estilo de los elementos del menú desplegable */
+.dropdown-content li{
+    display: block;
+}
+.dropdown-content:hover{
+    background-color: rgb(0, 0, 88); /*al pasar el cursor se pone mas oscuro*/
+}
+.top-nav li:hover{
+    background-color: rgb(0, 0, 88); /*al pasar el cursor se pone mas oscuro*/
+}
+
+.top-nav li a{
+    white-space: nowrap;
+}
+
+/* ------------------- Sección Principal ------------------- */
+.main-content-area {
+    background-image: linear-gradient(to bottom, rgba(16, 11, 113, 0.692), rgba(187, 177, 125, 0.818));
+}
+
+.header-section {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    color: burlywood;
+    background-color: rgb(9, 1, 63);
+}
+
+.header-text {
+    max-width: 60%;
+    text-align: center;
+}
+
+.header-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.header-section p {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.funciones h3{
+    font-size: 1.5em;
+    text-align: center;
+    color: burlywood;
+    margin-bottom: 15px;
+}
+.causas h3{
+    font-size: 1.5em;
+    text-align: center;
+    color: burlywood;
+    margin-bottom: 15px;
+}
+.logo-container {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 130px;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* ------------------- Contenido ------------------- */
+.container{
+    display: flex;
+    flex-direction: row; /*para que loc contenedores esten en fila*/
+    justify-content: center;
+}
+
+.container h2{
+    color: rgb(226, 182, 124);
+    text-align: center;
+}
+
+.icono-pasantia {
+    text-align: center;  
+}
+.icono-pasantia i{
+    color: rgb(243, 207, 159);
+    font-size: 50px;
+    padding: 10px;
+}
+.icono-pasantia:hover i{
+    color: antiquewhite;
+}
+.funciones{
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    width: 400px;
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+.funciones p{
+    font-size: 16px;
+}
+.causas{
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+.causas ul{
+    margin-left: 5px;
+}
+.icono-alerta{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.icono-alerta i{
+    color: rgb(243, 207, 159);
+}
+.icono-alerta:hover i{
+    color: rgba(248, 0, 0, 0.253);
+}
+
+/*-------------Desplegable-----------*/
+.contenido-requisito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.requisitos {
+    background-color: rgba(0, 0, 0, 0.226);
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 15px 0;
+    font-size: 18px;
+    width: 820px;
+    border-radius: 5px;
+}
+.requisito-mayor{
+    border-top: 1px solid #ccc;
+}
+summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 25px;
+    color: rgb(226, 182, 124);
+    padding: 5px;
+}
+
+summary::after {
+    content: "▼";
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+details ul, p {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #ddd;
+}
+details h3{
+    color: rgb(226, 182, 124);
+}
+b{
+    color: rgb(226, 182, 124);
+}
+
+
+/*----------- Estilo del Icono de Facebook ----------*/
+.facebook-btn {
+    color: white;
+    font-size: 30px; 
+    margin-top: 10px;
+    padding-right: 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.facebook-btn:hover {
+    color: #3b5998; 
+}
+/*----------- Estilo del Ícono de Instagram ----------*/
+.instagram{
+    color: white;
+    font-size: 30px; 
+    margin-top: 10px;
+    padding-right: 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+.instagram:hover {
+    color: #E1306C;
+}
+/*----------- Estilo del Ícono de Ubicación ----------*/
+.ubicacion{
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+.ubicacion:hover {
+    color: #FF0000; 
+}
+
+/*-----------Estilo del footer general----------*/
+footer {
+    background-color: rgb(0, 0, 115);
+    line-height: 1.6;
+    color: white;
+    padding: 20px 0; 
+    width: 100%;
+}
+
+.footer-content {
+    display: block; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 10px;
+    text-align: center; 
+}
+.agrupado-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    text-align: left;
+    padding: 20px;
+}
+
+.bloque-redes-ubicacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-right: 3px solid rgb(255, 255, 255); /* línea divisoria vertical */
+    padding-right: 20px;
+}
+
+.col-redes,
+.col-ubicacion {
+    padding: 5px 0;
+}
+
+.bloque-info-legal {
+    padding-left: 20px;
+    margin-top: 55px;
+    max-width: 400px;
+
+}
+
+/*-----------Estilo de los botones--------*/
+.dowland-document{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 45px;
+    padding: 30px;
+}
+
+.document{
+    margin-right: 20px;
+}
+
+button{
+    background-color: rgb(0, 0, 115);
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #000000; 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgb(65, 87, 119);
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    
+}
+button i{
+    margin-right:10px ;
+}
+
+
+
+/* ------------------- Media Queries para Adaptabilidad ------------------- */
+@media (max-width: 1200px) {
+    .header-section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .causas{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .dowland-document{
+        flex-direction: column;
+    }
+
+    .requisitos{
+        margin-right: 20px;
+        padding: 30px;
+        width: 200px;
+    }
+
+    .header-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /*Estilos responsivos del Menu (Nav)*/
+    .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        position: relative;
+    }
+
+    .top-nav a {
+        margin: 5px 0;
+    }
+    .header-seccion {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo-container{
+        margin: 30px;
+    }
+    .logo-escuela {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logo-escuela img {
+        width: 40px;
+        height: auto;
+    }
+
+    .logo-escuela h3 {
+    font-size: 16px;
+    margin: 0;
+    }
+
+    .imagen-logo{
+        height: 50px;
+        width: 50px;
+    }
+    .menu-boton {
+        display: flex;
+        font-size: 24px;
+        cursor: pointer;
+        margin-left: auto;
+        color: white;
+        background-color: rgb(0, 0, 115);
+    }
+
+    .menu-toggle {
+        display: none;
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(16, 11, 113, 0.692);
+        padding: 10px 0;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .menu li {
+        padding: 8px 16px;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .dropdown {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+    .dropdown-content {
+        display: block;
+        position: static; 
+        background-color: rgba(16, 11, 113, 0.692);
+        box-shadow: none;
+        border-radius: 0;
+    }
+    /*Estilos responsivos del Footer*/
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .agrupado-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .bloque-redes-ubicacion {
+        border-right: none;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        padding-bottom: 20px;
+    }
+
+    .bloque-info-legal {
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+    
+@media (max-width: 480px) {
+    .logo-escuela h3 {
+        font-size: 0.9em;
+        white-space: nowrap;
+    }
+
+    .imagen-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-size: 0.95em;
+    }
+    .menu-boton {
+        font-size: 22px;
+        padding: 8px;
+    }
+    
+    .causas{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .dowland-document{
+        flex-direction: column;
+    }
+
+    .requisitos{
+        margin-right: 20px;
+        padding: 30px;
+        width: 400px;
+    }
+
+    .header-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+    .logo-escuela h3 {
+        font-size: 0.85em;
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .imagen-logo {
+        width: 28px;
+        height: 28px;
+        margin: 0;
+    }
+
+    .menu {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-size: 0.9em;
+        padding: 8px 0;
+    }
+
+    .menu li {
+        padding: 8px 0;
+    }
+    .menu-boton {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .logo-container {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+    }
+    
+    .requisitos,
+    .funciones,
+    .causas {
+        width: 100%;
+        max-width: 300px; /* ajusta según tu diseño */
+        box-sizing: border-box;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .dowland-document{
+        flex-direction: column;
+    }
+
+    .header-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dowland-document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    h2{
+        padding-left: 0;
+        text-align: center;
+    }
+    .top-nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .logo-escuela {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .imagen-logo {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+
+    .logo-escuela h3 {
+        font-size: 1em;
+        white-space: nowrap;
+        margin: 0;
+        color: rgb(226, 182, 124);
+        flex-grow: 1;
+    }
+
+    .menu-boton {
+        display: block;
+        font-size: 22px;
+        padding: 8px;
+        background-color: rgb(0, 0, 115);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        position: absolute; /* ← clave para superponer */
+        top: 60px; /* ajusta según altura del nav */
+        left: 0;
+        width: 100%;
+        background-color: rgba(16, 11, 113, 0.692);
+        padding: 10px 0;
+        border-radius: 5px;
+        font-size: 1em;
+        z-index: 1000;
+    }
+
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .menu li {
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+    }
+
+    .dropdown-content {
+        display: block;
+        position: static;
+        background-color: rgba(16, 11, 113, 0.692);
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .logo-container {
+        width: 130px;
+        height: 130px;
+        margin: 20px auto;
+    }
+    
+    .causas{
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 50%;
+    }
+    .funciones{
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 50%;
+    }
+    
+    .dowland-document{
+        flex-direction: column;
+    }
+
+    .requisitos{
+        margin-right: 20px;
+        padding: 30px;
+        width: 400px;
+    }
+
+    .header-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-content,
+    .agrupado-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bloque-redes-ubicacion {
+        border-right: none;
+        border-bottom: 2px solid white;
+        padding-bottom: 20px;
+    }
+
+    .bloque-info-legal {
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
