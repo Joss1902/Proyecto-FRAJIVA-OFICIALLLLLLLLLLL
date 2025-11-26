@@ -11,7 +11,7 @@
 
 body {
     /* Fondo con gradiente oscuro semitransparente sobre una imagen (fondo.jpeg) */
-    background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(29, 38, 113, 0.6)), url(fondo.jpeg);
+    background: linear-gradient(rgba(29, 38, 113, 0.6), rgba(29, 38, 113, 0.6)), url(./Recursos_calendario/fondo.jpeg);
     /* Asegura que la imagen de fondo cubra toda el área */
     background-size: cover;
     /* Centra la imagen de fondo */
